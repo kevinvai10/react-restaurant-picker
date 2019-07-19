@@ -1,0 +1,9 @@
+.category-container{
+    display:flex;
+    justify-content: center;
+}
+
+.category-container button{
+    margin: 20px;
+    padding: 12px;
+}

@@ -1,0 +1,9 @@
+.RestaurantBox-container{
+    margin-top: 20px;
+}
+
+
+.RestaurantBox-container button{
+    padding: 15px;
+    margin-bottom: 10px;
+}
