@@ -7,6 +7,8 @@ const CategoryContainer = ({filteredCategories, onHandleCats}) => {
             {
                 filteredCategories.map((category, index) => (<CategoryButton key={index} category={category} onHandleCats={onHandleCats} />)  ) 
             }
+            
+            <button value={''} onClick={onHandleCats}>All categories</button>
         </div>
     )
 }
