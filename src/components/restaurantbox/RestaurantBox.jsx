@@ -104,17 +104,21 @@ class RestaurantBox extends React.Component{
         return(
             <div className="RestaurantBox-container">
                 {
-                    this.state.category ? 
-                    <CategoryContainer filteredCategories={filteredCategories} onHandleCats={this.onHandleCats}/> 
+                    this.state.category ? (
+                        <div className="button-options">
+                            <CategoryContainer filteredCategories={filteredCategories} onHandleCats={this.onHandleCats}/> 
+                            <RandomButton handleClick={this.handleClick}/>
+                        </div>
+                    )
                     : 
                     (
-                        <div>
+                        <div className="button-options">
                             <button onClick={this.handleCategoryClick}>Use Categories</button>
+                            <RandomButton handleClick={this.handleClick}/>
                         </div>
                     )
                 }
                 
-                <RandomButton handleClick={this.handleClick}/>
                 
                 {
                     this.state.winnerRestaurant ? <DisplayBox winner={this.state.winnerRestaurant} /> : null

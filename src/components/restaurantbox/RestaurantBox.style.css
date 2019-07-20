@@ -6,4 +6,12 @@
 .RestaurantBox-container button{
     padding: 15px;
     margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 20px;
+}
+
+.button-options{
+    display: flex;
+    justify-content: center;
+    flex-grow: row;
 }
